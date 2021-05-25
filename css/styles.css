@@ -33,9 +33,9 @@ h1 {
   position: absolute;
   top: calc(50% - 10rem);
   left: calc(50% - 10rem);
-  width: 40rem;
-  height: 40rem;
-  background: url('/media/harry3.jpg') 50% 50% no-repeat fixed;
+  width: 20rem;
+  height: 20rem;
+  background: url('/media/mapa.jpg') 50% 50% no-repeat fixed;
   background-size: cover;
   border-radius: 50%;
 }
