@@ -20,14 +20,18 @@ html,body {
   padding: 30rem;
   text-align: center;
 }
-h1 {
-  position: relative;
-  font-size: 7rem;
-  text-transform: uppercase;
-  font-family: test;
-  color: rgba(238, 234, 234, 0.856);
-  z-index: 10;
+
+#forward {
+  position: absolute; 
+  z-index: 5;
+  left: 83%;
+  margin-top: 13.5%;
+  font-size: 5rem;
+  color: #1d1f2000;
+  opacity:0
+ 
 }
+
 .magic {
   z-index: 5;
   position: absolute;
@@ -35,7 +39,7 @@ h1 {
   left: calc(50% - 10rem);
   width: 20rem;
   height: 20rem;
-  background: url('/media/mapa.jpg') 50% 50% no-repeat fixed;
+  background: url('/media/potter10.png') 50% 50% no-repeat fixed;
   background-size: cover;
   border-radius: 50%;
 }
