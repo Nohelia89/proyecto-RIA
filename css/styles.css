@@ -37,8 +37,8 @@ html,body {
   position: absolute;
   top: calc(50% - 10rem);
   left: calc(50% - 10rem);
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   background: url('/media/potter10.png') 50% 50% no-repeat fixed;
   background-size: cover;
   border-radius: 50%;
