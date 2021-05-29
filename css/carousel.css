@@ -59,6 +59,19 @@ body {
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  left: 100%;
+  margin-right:10%;
+  position:absolute;
+}
+
+.imagen{
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  left: 70%;
+ margin-top: -1%;
+  position:absolute;
+  padding-right: 2%;
+  
+  
 }
 
 /* Thin out the marketing headings */
