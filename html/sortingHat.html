@@ -33,7 +33,7 @@
     <!-- Custom styles for this template -->
     <link href="/css/carousel.css" rel="stylesheet" type="text/css" media="all">
   </head>
-  <body style="background-color: black">
+<body style="background-color: black">
     
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -93,41 +93,47 @@
 <br>
 
 <br>
+<div id="hat" >
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" width="300" height="300" src="/media/shat.gif" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
-        
+        <img class="bd-placeholder-img rounded-circle" width="300" height="300"  src="/media/shat.gif" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+      </div><!-- /.col-lg-l4 -->
+    <div>
         <h2 style="color: rosybrown;">Sorting Hat</h2>
         <p style="color: rosybrown;">Mmm... que bueno verte por aquí. Veamos a que casa perteneces</p>
-        <p><a class="btn btn-secondary" style="background-color:rosybrown"  href="#">Hacer la prueba! </a></p>
-     
-      </div><!-- /.col-lg-4 -->
+        <button class="btn btn-primary" type="submit" @click="getCasa"  style="width:33,33%">Probar!</button>
+      </div>
+      </div><!-- /.row -->
       
       <div class="imagen">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  :src="imagen" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
         </div> 
-   
+      
 
       
-  </div>
+  </div><!-- /.container -->
   
 
-  </div><!-- /.container -->
+
 
 
   
 </main>
-
+</div>
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      
-  </body>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script src="/js/sortingHat.js"></script>
+</body>
 </html>
