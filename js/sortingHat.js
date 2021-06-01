@@ -5,7 +5,7 @@ var hat = new Vue({
       
      // listaVac: [],
       casa: '',
-      imagen: '/media/casas.gif'
+      imagen: '/media/negro.png'
     },
    
   
