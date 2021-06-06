@@ -4,8 +4,7 @@ var harry = new Vue({
     data: {
       
       listaPersonajes: []
-   //   casa: '',
-     // imagen: '/media/casas.gif'
+
     },
    
     mounted(){

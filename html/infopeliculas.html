@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+   
+    <script src="https://unpkg.com/v-video-embed/dist/video-embed.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+   <title>Informacion de Peliculas</title>
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/html/main.html"  style="font-family: Harry; font-size: 35px;">&nbsp;Harry Potter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/html/infopeliculas.html" style="font-family: Harry3; font-size: 25px;">Peliculas&nbsp;&nbsp;&nbsp;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/html/sortingHat.html" style="font-family: Harry3; font-size: 25px;" >Sorting Hat&nbsp;&nbsp;&nbsp;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/html/personajes2.html" style="font-family: Harry3; font-size: 25px;">Personajes&nbsp;&nbsp;&nbsp;</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+    
+        <div class="collapse navbar-collapse justify-content-between"></div>
+              <ul class="navbar-nav">
+              <li class="nav-right">
+                <a class="nav-link" href="/html/main.html"  style="font-family: Harry3; font-size: 25px;">Inicio</a>
+              </li>
+            </ul>
+            </div>
+      </nav>
+    </header>
+    <br><br><br>
+     
+  <head>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="9000">
+          <img src="/media/gif1.gif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="9000">
+          <img src="/media/gif2.gif" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  </head>
+    <!-- CIERRE CARRUSEL-->
+  <style type="text/css">
+  body{
+    background-image: url('/media/fondo.jpg');
+    color: white;
+    padding-bottom: 100px;
+
+  }
+  @font-face {
+   font-family: "Harry";
+   src: url("/fuentes/HARRYP__.TTF");
+ }
+
+
+ @font-face {
+   font-family: "Harry3";
+   src: url("/fuentes/dum1.ttf");
+ }
+   
+  </style>
+<br><br><br>
+<!-- TRAILER HARRY POTTER 1-->
+  <div id="aplicacion1" class="container" background-color="black">
+    <div class="card text-white bg-dark mb-3" style="width: 1000px;min-height:300px;margin-left:60px">
+      <div class="row g-0">
+        <div class="col-md-4">
+            <img src="/media/PosterHpPiedraFilosofal2.jpg" alt="" class="card-img-top">
+        </div>
+        <div class="col-md-8" style="background-color:black;">
+          <div class="card-body" style="background-color: black;">
+            <h2 class="card-title" style="font-family: Harry; font-size:45px; color: grey" >Harry Potter y la Piedra Filosofal</h2>
+            
+            <p class="card-text" style="font-family: Harry3; font-size: 28px; " >El día de su cumpleaños, Harry Potter descubre que es hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. Debe asistir a una famosa escuela de magia y hechicería, donde entabla una amistad con dos jóvenes que se convertirán en sus compañeros de aventura. Durante su primer año en Hogwarts, descubre que un malévolo y poderoso mago llamado Voldemort está en busca de una piedra filosofal que alarga la vida de quien la posee.</p>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Button trigger modal -->
+      <button type="submit" style="font-family: Harry; font-size: 40px" class="btn btn-primary btn-dark"  @click="abrirVideo" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        Ver Trailer
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-body" style="background-color:black">
+              <div class="ratio ratio-16x9">
+                <iframe id="vid1" v-bind:src="'https://www.youtube.com/embed/'+info1" title="YouTube video" allowfullscreen></iframe>
+              </div> 
+            </div>
+            <div class="modal-footer" style="background-color:black">
+              <button type="submit" class="btn btn-primary btn-dark " @click="cerrarVideo" style="font-family: Harry" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- DIV CARD-->
+
+  </div>
+
+<!-- TRAILER HARRY POTTER 2 -->
+
+  <div id="aplicacion2" class="container" background-color="black">
+    <div class="card text-white bg-dark mb-3" style="width: 1000px;min-height:300px;margin-left:60px">
+      <div class="row g-0">
+        <div class="col-md-8" style="background-color:black;">
+          <div class="card-body" style="background-color: black;">
+            <h2 class="card-title" style="font-family: Harry; font-size:45px; color: grey">Harry Potter y la Camara de los Secretos</h2>
+            
+            <p class="card-text" style="font-family: Harry3; font-size: 28px; " >
+            Una conspiración para hacer que este año sucedan las cosas más terribles en el Colegio Hogwarts.
+            El verano de Harry ha incluido el peor cumpleaños de su vida, las advertencias de un elfo doméstico llamado Dobby y el rescate de casa de los Dursley protagonizado por su amigo Ron al volante de un coche mágico volador. De vuelta en el Colegio Hogwarts, donde va a empezar su segundo curso, Harry oye unos susurros que resuenan por los pasillos vacíos. Y entonces empiezan los ataques y varios alumnos aparecen petrificados...
+          </p>
+          </div>
+        </div>
+         <div class="col-md-4">
+            <img src="/media/Poster-hp-and-the-chamber-of-secrets2.jpg" alt="" class="card-img-top">
+        </div>
+      </div>
+    
+    <!-- Button trigger modal -->
+      <button type="submit" style="font-family: Harry; font-size: 40px" class="btn btn-primary btn-dark" @click="abrirVideo" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        Ver Trailer
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-body" style="background-color:black">
+              <div class="ratio ratio-16x9">
+                <iframe v-bind:src="'https://www.youtube.com/embed/'+info2" title="YouTube video" allowfullscreen></iframe>
+              </div> 
+            </div>
+            <div class="modal-footer" style="background-color:black">
+              <button type="submit" style="font-family: Harry" class="btn btn-primary btn-dark" @click="cerrarVideo" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- DIV CARD-->
+
+  </div>
+
+<!-- TRAILER HARRY POTTER 3-->
+  <div id="aplicacion3" class="container" background-color="black">
+    <div class="card text-white bg-dark mb-3" style="width: 1000px;min-height:300px;margin-left:60px">
+      <div class="row g-0">
+        <div class="col-md-4">
+            <img src="/media/PosterHpPrisionerOfAzkaban2.jpg"  alt="" class="card-img-top">
+        </div>
+        <div class="col-md-8" style="background-color:black;">
+          <div class="card-body" style="background-color: black;">
+            <h2 class="card-title" style="font-family: Harry; font-size:45px; color: grey">Harry Potter y el Prisionero de Azkaban</h2>
+            
+            <p class="card-text" style="font-family: Harry3; font-size: 28px; ">
+              El tercer año de estudios de Harry en Hogwarts se ve amenazado por la fuga de Sirius Black de la prisión de Azkaban. Al parecer, se trata de un peligroso mago que fue cómplice de Lord Voldemort y que intentará vengarse de Harry Potter.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Button trigger modal -->
+      <button type="submit" style="font-family: Harry; font-size: 40px" class="btn btn-primary btn-dark" @click="abrirVideo" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+        Ver Trailer
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-body" style="background-color:black">
+              <div class="ratio ratio-16x9">
+                <iframe v-bind:src="'https://www.youtube.com/embed/'+info3" title="YouTube video" allowfullscreen></iframe>
+              </div> 
+            </div>
+            <div class="modal-footer" style="background-color:black">
+              <button type="submit" style="font-family: Harry" class="btn btn-primary btn-dark" @click="cerrarVideo" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- DIV CARD-->
+   </div> <!-- container -->
+
+<!-- TRAILER HARRY POTTER 4-->
+  <div id="aplicacion4" class="container" background-color="black">
+    <div class="card text-white bg-dark mb-3" style="width: 1000px;min-height:300px;margin-left:60px">
+      <div class="row g-0">
+        <div class="col-md-8" style="background-color:black;">
+          <div class="card-body" style="background-color: black;">
+            <h2 class="card-title" style="font-family: Harry; font-size:45px; color: grey">Harry Potter y el Caliz de Fuego</h2>
+            <p class="card-text" style="font-family: Harry3; font-size: 28px; " >
+              Hogwarts se prepara para el Torneo de los Tres Magos, en el que competirán tres escuelas de hechicería. Para sorpresa de todos, Harry Potter es elegido para participar en la competencia, en la que deberá luchar contra dragones, internarse en el agua y enfrentarse a sus mayores miedos.
+            </p>
+          </div>
+        </div>
+         <div class="col-md-4">
+            <img src="/media/PosterHpGobletOfFire.jpg" alt="" class="card-img-top">
+        </div>
+      </div>
+    
+    <!-- Button trigger modal -->
+      <button type="submit" style="font-family: Harry; font-size: 40px" class="btn btn-primary btn-dark" @click="abrirVideo" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+        Ver Trailer
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-body" style="background-color:black">
+              <div class="ratio ratio-16x9">
+                <iframe v-bind:src="'https://www.youtube.com/embed/'+info4" title="YouTube video" allowfullscreen></iframe>
+              </div> 
+            </div>
+            <div class="modal-footer" style="background-color:black">
+              <button type="submit" style="font-family: Harry" class="btn btn-primary btn-dark" @click="cerrarVideo" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- DIV CARD-->
+   </div> <!-- container -->
+
+<!-- TRAILER HARRY POTTER 5-->
+  <div id="aplicacion5" class="container" background-color="black">
+    <div class="card text-white bg-dark mb-3" style="width: 1000px;min-height:300px;margin-left:60px">
+      <div class="row g-0">
+        <div class="col-md-4">
+            <img src="/media/PosterHpOrder_of_phoenix2.jpg"  alt="" class="card-img-top">
+        </div>
+        <div class="col-md-8" style="background-color:black;">
+          <div class="card-body" style="background-color: black;">
+            <h5 class="card-title" style="font-family: Harry; font-size:45px; color: grey">Harry Potter y la Orden del Fenix</h5>
+            <p class="card-text" style="font-family: Harry3; font-size: 28px; " >
+              En su quinto año en Hogwarts, Harry descubre que muchos integrantes de la comunidad de magos no conocen la verdad acerca de su encuentro con Lord Voldemort. Cornelius Fudge, ministro de magia, designa a Dolores Umbridge como maestra de defensa contra de las artes oscuras porque cree que el profesor Dumbledore planea apoderarse de su trabajo. Pero sus enseñanzas son inadecuadas, por lo que Harry prepara a los estudiantes para defender la escuela en contra del mal.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Button trigger modal -->
+      <button type="submit" style="font-family: Harry; font-size: 40px" class="btn btn-primary btn-dark" @click="abrirVideo" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+        Ver Trailer
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-body" style="background-color:black">
+              <div class="ratio ratio-16x9">
+                <iframe v-bind:src="'https://www.youtube.com/embed/'+info5" title="YouTube video" allowfullscreen></iframe>
+              </div> 
+            </div>
+            <div class="modal-footer" style="background-color:black">
+              <button type="submit" style="font-family: Harry" class="btn btn-primary btn-dark" @click="cerrarVideo" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- DIV CARD-->
+   </div> <!-- container -->
+
+<!-- TRAILER HARRY POTTER 6-->
+  <div id="aplicacion6" class="container" background-color="black">
+    <div class="card text-white bg-dark mb-3" style="width: 1000px;min-height:300px;margin-left:60px">
+      <div class="row g-0">
+        <div class="col-md-8" style="background-color:black;">
+          <div class="card-body" style="background-color: black;">
+            <h5 class="card-title" style="font-family: Harry; font-size:45px; color: grey">Harry Potter y el Misterio del Principe</h5>
+            <p class="card-text" style="font-family: Harry3; font-size: 28px; " >
+              Harry, que comienza su sexto año en la escuela de magia de Hogwarts, descubre un misterioso libro propiedad de "El Príncipe Mestizo" con el cual aprende nuevos trucos. Voldemort va tomando control tanto del mundo Muggle como del mundo de la magia, y Hogwarts ya no es el lugar seguro que solía ser. Harry sospecha que tal vez hasta el castillo sea peligroso. Dumbledore sabe que la batalla final se aproxima rápidamente, y por eso se preocupa mucho más por preparar a Harry para ello.
+            </p>
+          </div>
+        </div>
+         <div class="col-md-4">
+            <img src="/media/PosterHpHalfBloodPrince.jpg" alt="" class="card-img-top">
+        </div>
+      </div>
+    
+    <!-- Button trigger modal -->
+      <button type="submit" style="font-family: Harry; font-size: 40px" class="btn btn-primary btn-dark" @click="abrirVideo" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+        Ver Trailer
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-body" style="background-color:black">
+              <div class="ratio ratio-16x9">
+                <iframe v-bind:src="'https://www.youtube.com/embed/'+info6" title="YouTube video" allowfullscreen></iframe>
+              </div> 
+            </div>
+            <div class="modal-footer" style="background-color:black">
+              <button type="submit" style="font-family: Harry" class="btn btn-primary btn-dark" @click="cerrarVideo" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- DIV CARD-->
+   </div> <!-- container -->
+
+<!-- TRAILER HARRY POTTER 7-->
+  <div id="aplicacion7" class="container" background-color="black">
+    <div class="card text-white bg-dark mb-3" style="width: 1000px;min-height:300px;margin-left:60px">
+      <div class="row g-0">
+        <div class="col-md-4">
+            <img src="/media/PosterHpDeathlyHallowsp1.jpg"  alt="" class="card-img-top">
+        </div>
+        <div class="col-md-8" style="background-color:black;">
+          <div class="card-body" style="background-color: black;">
+            <h5 class="card-title" style="font-family: Harry; font-size:45px; color: grey">Harry Potter y las Reliquias de la Muerte p1</h5>
+            <p class="card-text" style="font-family: Harry3; font-size: 28px; ">
+              Harry, Ron y Hermione se van a una peligrosa misión para localizar y destruir el secreto de la inmortalidad y destrucción de Voldemort - los Horrocruces. Solos, sin la guía de sus profesores o la protección del Profesor Dumbledore, los tres amigos deben apoyarse el uno en el otro más que nunca. Pero hay Fuerzas Oscuras en medio que amenazan con separarlos. Harry Potter se está acercando cada vez más a la tarea para la que se ha preparado desde el primer día que pisó Hogwarts: la última batalla con Voldemort.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Button trigger modal -->
+      <button type="submit" style="font-family: Harry; font-size: 40px" class="btn btn-primary btn-dark" @click="abrirVideo" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+        Ver Trailer
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabe7" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-body" style="background-color:black">
+              <div class="ratio ratio-16x9">
+                <iframe v-bind:src="'https://www.youtube.com/embed/'+info7" title="YouTube video" allowfullscreen></iframe>
+              </div> 
+            </div>
+            <div class="modal-footer" style="background-color:black">
+              <button type="submit" style="font-family: Harry" class="btn btn-primary btn-dark" @click="cerrarVideo" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- DIV CARD-->
+   </div> <!-- container -->
+
+<!-- TRAILER HARRY POTTER 8-->
+  <div id="aplicacion8" class="container" background-color="black">
+    <div class="card text-white bg-dark mb-3" style="width: 1000px;min-height:300px;margin-left:60px">
+      <div class="row g-0">
+        <div class="col-md-8" style="background-color:black;">
+          <div class="card-body" style="background-color: black;">
+            <h5 class="card-title" style="font-family: Harry; font-size:45px; color: grey">Harry Potter y las Reliquias de la Muerte p2</h5>
+            <p class="card-text" style="font-family: Harry3; font-size: 28px; "  >
+              El enfrentamiento entre el bien y el mal llega a su cénit. La búsqueda de los horrocruxes lleva a los amigos a Hogwarts, donde Harry, Ron y Hermione se preparan para una última batalla contra Lord Voldemort y sus fieles secuaces, los mortífagos, para decidir el futuro del mundo mágico.
+            </p>
+          </div>
+        </div>
+         <div class="col-md-4">
+            <img src="/media/PosterHpDeathlyHallowsp2.jpg" alt="" class="card-img-top">
+        </div>
+      </div>
+    
+    <!-- Button trigger modal -->
+      <button type="submit" style="font-family: Harry; font-size: 40px" class="btn btn-primary btn-dark" @click="abrirVideo" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+        Ver Trailer
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-body" style="background-color:black">
+              <div class="ratio ratio-16x9">
+                <iframe v-bind:src="'https://www.youtube.com/embed/'+info8" title="YouTube video" allowfullscreen></iframe>
+              </div> 
+            </div>
+            <div class="modal-footer" style="background-color:black">
+              <button type="submit" style="font-family: Harry" class="btn btn-primary btn-dark" @click="cerrarVideo" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- DIV CARD-->
+   </div> <!-- container -->
+
+  <script src="/js/consumirapi.js"></script>
+    
+  </body>
+</html>

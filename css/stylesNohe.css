@@ -8,6 +8,15 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+@font-face {
+  font-family: "Harry";
+  src: url("/fuentes/HARRYP__.TTF");
+}
+@font-face {
+  font-family: "Harry3";
+  src: url("/fuentes/dum1.ttf");
+}
 html,body {
   font-size: 62.5%;
   height: 100%;

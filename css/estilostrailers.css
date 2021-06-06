@@ -1,0 +1,33 @@
+@font-face {
+  src: url("C:\Users\lucas\OneDrive\Desktop\Pagina Harry Potter\fuentes\HARRYP__.ttf");
+  font-family: test;
+}
+ 
+.bg-primary{
+	 background-color:black!important; 
+}
+
+h1{
+	font-family: test;
+}
+
+header{
+	height: 100px;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	line-height: 100px;
+	font-family: test;
+}
+
+body{
+	background: black;
+	color: white;
+	padding-bottom: 100px;
+
+}
+
+h1{
+	font-family: test;	
+}
+

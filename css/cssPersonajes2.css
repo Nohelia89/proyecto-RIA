@@ -1,3 +1,11 @@
+@font-face {
+   font-family: "Harry";
+   src: url("/fuentes/HARRYP__.TTF");
+ }
+ @font-face {
+   font-family: "Harry3";
+   src: url("/fuentes/dum1.ttf");
+ }
 
 body {
    font-family: 'Comfortaa', sans-serif;
